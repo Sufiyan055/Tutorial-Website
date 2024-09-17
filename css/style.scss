@@ -187,7 +187,9 @@ $TextColor: #f14d5d;
         padding: 15px;
         font-size: 16px;
         background-color: #21242b;
+        position: relative;
         color: #fff;
+
         &:nth-child(1) {
           background-color: #28a745;
         }
@@ -799,7 +801,7 @@ $TextColor: #f14d5d;
       .wrapper {
         .container {
           span {
-            font-size: 1.2em;
+            font-size: 1em;
           }
         }
       }
@@ -844,7 +846,7 @@ $TextColor: #f14d5d;
       .wrapper {
         .container {
           span {
-            font-size: 0.8em;
+            font-size: 0.7em;
           }
         }
       }
@@ -879,8 +881,9 @@ $TextColor: #f14d5d;
     .contentAbout {
       .wrapper {
         .container {
+          padding: 0px;
           span {
-            font-size: 0.6em;
+            font-size: 0.5em;
           }
         }
       }
