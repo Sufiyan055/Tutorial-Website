@@ -1,0 +1,889 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  scroll-behavior: smooth;
+}
+@mixin flexcontent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+$pgColor: black;
+$TextColor: #f14d5d;
+
+@mixin fontSizeHead {
+  color: $TextColor;
+  font-size: 2em;
+  border-bottom: 1px dashed $TextColor;
+}
+
+/* Home - Top Navbar */
+
+.iconsEmailPhone {
+  @include flexcontent();
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 10px 35px;
+  background: #000;
+  a {
+    color: #fff;
+    margin: 0px 5px;
+  }
+  .iconshere {
+    a {
+      transition: color 0.1s;
+      &:hover:nth-child(1) {
+        color: green;
+      }
+      &:hover:nth-child(2) {
+        color: blue;
+      }
+      &:hover:nth-child(3) {
+        color: purple;
+      }
+      &:hover:nth-child(4) {
+        color: red;
+      }
+      &:hover:nth-child(5) {
+        color: red;
+      }
+    }
+  }
+}
+
+.NavbarSection {
+  .mainNavbar {
+    background: whitesmoke;
+    @include flexcontent();
+    justify-content: space-between;
+    padding: 5px 35px;
+    position: relative;
+    .toggleBar {
+      position: absolute;
+      display: none;
+    }
+    .Logohead {
+      @include flexcontent();
+      img {
+        width: 55px;
+      }
+    }
+    .ulList {
+      @include flexcontent();
+      li {
+        margin: 0px 10px;
+        list-style: none;
+        a {
+          font-family: "Kanit", sans-serif;
+          font-weight: 400;
+          font-style: normal;
+          font-size: 1.1em;
+          &:hover {
+            color: #2878eb;
+          }
+        }
+      }
+    }
+    .btnCall {
+      background-color: #2878eb;
+      padding: 10px 20px;
+      color: #fff;
+    }
+  }
+}
+
+.bgCLassesName {
+  background: linear-gradient(
+      45deg,
+      rgba(40, 120, 235, 0.9),
+      rgba(40, 120, 235, 0.9)
+    ),
+    url(../images/bgNavImage.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 95vh;
+  @include flexcontent();
+  position: relative;
+  flex-flow: column;
+  span {
+    text-align: center;
+    font-size: 2.2em;
+    color: #fff;
+  }
+  i {
+    font-size: 1.8em;
+    color: #fff;
+    text-align: center;
+  }
+  a {
+    padding: 5px 20px;
+    border: 1px solid #fff;
+    font-size: 1.3em;
+    color: #fff;
+    transition: background 0.2s, color 0.2s, border-color 0.2s;
+    &:hover {
+      background: #fff;
+      color: #000;
+      border-color: #000;
+    }
+  }
+  .bgDesignClassName {
+    position: absolute;
+    bottom: -9px;
+    img {
+      width: 100%;
+    }
+  }
+}
+
+/* Home - About Us Section */
+
+.aboutSection {
+  margin-top: 85px;
+  @include flexcontent();
+  align-items: normal;
+  flex-wrap: wrap;
+  .imgAbout {
+    width: 25em;
+    height: 30em;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  .contentAbout {
+    width: 50%;
+    margin-left: 15px;
+    strong {
+      font-size: 2.5em;
+      border-bottom: 1px dashed rgba(245, 38, 38, 0.662);
+      color: rgba(245, 38, 38, 0.662);
+    }
+    p {
+      margin-top: 25px;
+      font-size: 1.2em;
+      font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+        "Lucida Sans", Arial, sans-serif;
+      color: #6b6a75;
+    }
+    .wrapper {
+      margin-top: 50px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      .container {
+        width: 20vmin;
+        height: 18vmin;
+        @include flexcontent();
+        flex-direction: column;
+        padding: 15px;
+        font-size: 16px;
+        background-color: #21242b;
+        color: #fff;
+        &:nth-child(1) {
+          background-color: #28a745;
+        }
+        &:nth-child(2) {
+          background-color: #2878eb;
+        }
+        &:nth-child(3) {
+          background-color: #f14d5d;
+        }
+        &:nth-child(4) {
+          background-color: #ffc107;
+        }
+        span {
+          font-size: 1.7em;
+          font-weight: bold;
+          font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .text {
+          color: #fff;
+        }
+      }
+    }
+  }
+}
+
+/*  */
+
+.ChooseUsSection {
+  background: url(../images/bgImage.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-top: 55px;
+  @include flexcontent();
+  align-items: normal;
+  flex-wrap: wrap;
+  padding: 15px;
+  .contentChooseUS {
+    width: 40%;
+    Strong {
+      color: $TextColor;
+      border-bottom: 1px dashed $TextColor;
+      font-size: 1.2em;
+    }
+    p {
+      margin-top: 15px;
+      font-size: 1.3em;
+      color: $pgColor;
+    }
+    .iconsSomeContent {
+      margin-top: 20px;
+      .subicons {
+        margin-top: 10px;
+        @include flexcontent();
+        justify-content: start;
+        i {
+          margin-right: 15px;
+          padding: 15px;
+          font-size: 1.3em;
+          width: 50px;
+          background: #28a745;
+          @include flexcontent();
+          color: #fff;
+        }
+        span {
+        }
+      }
+    }
+  }
+  .sirImage {
+    width: 40%;
+    img {
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+}
+
+/* Home - Courses Offered  */
+
+.couresDivHead {
+  margin-top: 95px;
+  @include flexcontent();
+  h2 {
+    @include fontSizeHead();
+  }
+}
+
+.coursesOffered {
+  margin-top: 55px;
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  padding: 20px 70px;
+  .mainCourseBox {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    justify-items: center;
+    .course-card {
+      background-color: white;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      width: 100%;
+      max-width: 300px;
+      transition: transform 0.2s;
+
+      .course-image {
+        img {
+          width: 100%;
+          height: auto;
+          transition: transform 0.3s;
+          &:hover {
+            transform: scale(1.05);
+          }
+        }
+      }
+    }
+    .course-info {
+      padding: 20px;
+      text-align: left;
+      h3 {
+        font-size: 18px;
+        margin-bottom: 10px;
+        color: #333;
+      }
+    }
+  }
+  .btnMoreCourses {
+    margin-top: 55px;
+    text-align: center;
+    a {
+      padding: 5px 20px;
+      background-color: #2878eb;
+      color: #fff;
+      box-shadow: 1.2px 1.2px 5px #21242b;
+      transition: box-shadow 0.2s;
+      &:hover {
+        box-shadow: 1px 1px 2px #21242b;
+      }
+    }
+  }
+}
+
+/* Home - Our Toppers */
+
+.OurToppers {
+  margin-top: 75px;
+  @include flexcontent();
+  h2 {
+    @include fontSizeHead();
+  }
+}
+
+.ToppersSection {
+  margin-top: 55px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  justify-items: center;
+  padding: 20px 70px;
+  .topperImgName {
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 300px;
+    box-shadow: 1px 1px 4px grey;
+    .topperImg {
+      height: 320px;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.3s;
+      }
+    }
+    .topperName {
+      padding: 5px;
+      text-align: center;
+      @include flexcontent();
+      flex-direction: column;
+      gap: 4px;
+      strong {
+        border-bottom: 1px solid #000;
+      }
+      span {
+        font-size: 1.1em;
+      }
+    }
+  }
+}
+
+/* Home - Testinomials - Our Happy Students */
+
+.mainTestinomialContainer {
+  background: url(../images/bgImage.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-top: 85px;
+  position: relative;
+  height: 55vh;
+  @include flexcontent();
+  align-items: normal;
+  .contentTestinomial {
+    width: 30%;
+    margin-right: 15px;
+    strong {
+      font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+        "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+      font-size: 2.2em;
+    }
+    p {
+      margin-top: 15px;
+      color: $pgColor;
+    }
+  }
+  .wrapper {
+    background-color: #ffffff;
+    position: relative;
+    width: 80vw;
+    max-width: 41em;
+    height: 20em;
+    border-radius: 0.6em;
+    box-shadow: 0 1.8em 3em rgba(1, 17, 39, 0.15);
+    display: flex;
+    .testinomial-container {
+      width: 85%;
+      height: 100%;
+      position: relative;
+      margin: auto;
+      padding: 1.8em 1.2em;
+      p {
+        text-align: center;
+        font-size: 0.9em;
+        line-height: 2em;
+        letter-spacing: 0.05em;
+      }
+      img {
+        width: 4.4em;
+        height: 4em;
+        object-fit: cover;
+        display: block;
+        margin: 1.8em auto 1.25em auto;
+        border-radius: 100%;
+        transform: scale(1.2);
+      }
+      h3 {
+        color: #000;
+        font-size: 1em;
+        text-align: center;
+      }
+    }
+    button {
+      font-size: 1.8em;
+      height: 2.2em;
+      width: 2.2em;
+      background-color: #ffffff;
+      position: absolute;
+      margin: auto;
+      top: 0;
+      bottom: 0;
+      border: none;
+      color: #ff02ff;
+      box-shadow: 0 0 1em rgba(1, 17, 39, 0.25);
+      cursor: pointer;
+      border-radius: 50%;
+    }
+    #next {
+      right: -1.1em;
+    }
+    #prev {
+      left: -1.1em;
+    }
+  }
+}
+
+/* Home - Just Above the Footer Enquiry & Admission */
+
+.justAbovetheFooter {
+  background: linear-gradient(45deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url(../images/apply.webp);
+  @include flexcontent();
+  flex-flow: column;
+  margin-top: 40px;
+  height: 70vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  p {
+    text-align: center;
+    font-size: 1.7em;
+    color: #fff;
+    margin: 25px 2px;
+  }
+  a {
+    padding: 5px 15px;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    font-size: 1.3em;
+    transition: background 0.3s;
+    &:hover {
+      background: #2878eb;
+    }
+  }
+}
+
+/* Home - Footer */
+
+.footerSection {
+  background: #291a51;
+  justify-content: 0;
+  flex-direction: column;
+  position: relative;
+  color: #fff;
+  padding: 15px;
+  padding-top: 55px;
+  .logoFooter {
+    width: 20%;
+    @include flexcontent();
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 15px;
+    img {
+      width: 5em;
+      box-shadow: 1px 1px 4px #21242b;
+      border-radius: 5px;
+    }
+  }
+  .linksAddressFooter {
+    @include flexcontent();
+    align-items: normal;
+    flex-wrap: wrap;
+    gap: 74px;
+    .GetinTouchFooter {
+      display: grid;
+      gap: 15px;
+      .branchAdresssMain {
+        .branchAddressFooter {
+          margin-top: 15px;
+          width: 70%;
+          a {
+            text-decoration: underline;
+            color: #fff;
+            i {
+              color: rgb(199, 8, 8);
+            }
+          }
+        }
+      }
+      .phoneEmailFooter {
+        font-size: 1.1em;
+        text-decoration: underline;
+        a {
+          color: #fff;
+        }
+      }
+      .socialIconsFooter {
+        @include flexcontent();
+        justify-content: left;
+        align-items: end;
+        gap: 5px;
+        flex-wrap: wrap;
+        span {
+          font-size: 1.2em;
+        }
+        a {
+          padding: 10px;
+          border: 1px solid #fff;
+          color: #fff;
+          transition: background 0.3s, color 0.3s, border-color 0.3s;
+          &:hover:nth-child(2) {
+            background: rgb(12, 149, 12);
+            color: #fff;
+            border-color: #fff;
+          }
+
+          &:hover:nth-child(3) {
+            background: rgb(2, 192, 255);
+            color: #fff;
+            border-color: #fff;
+          }
+          &:hover:nth-child(4) {
+            background: purple;
+            color: #fff;
+            border-color: #fff;
+          }
+          &:hover:nth-child(5) {
+            background: red;
+            color: #fff;
+            border-color: #fff;
+          }
+        }
+      }
+    }
+    .quickLinks {
+      font-size: 1.2em;
+      li {
+        margin-top: 15px;
+        list-style: none;
+        a {
+          text-decoration: underline;
+          color: #fff;
+          &:hover {
+            color: #2878eb;
+          }
+        }
+      }
+    }
+  }
+  .bgDesignfooterSection {
+    position: absolute;
+    left: 0px;
+    top: -62px;
+    img {
+      width: 100%;
+      filter: brightness(0) saturate(100%) invert(13%) sepia(22%)
+        saturate(5000%) hue-rotate(238deg) brightness(82%) contrast(99%);
+    }
+  }
+}
+
+/* .colored-image {
+  filter: brightness(0) saturate(100%) invert(13%) sepia(22%) saturate(5000%)
+    hue-rotate(238deg) brightness(82%) contrast(99%);
+} */
+
+/* Whatsapp chat Link Icon */
+
+.whatsappChatIcon {
+  position: fixed;
+  right: 25px;
+  bottom: 15px;
+  background-color: #28a745;
+  color: #fff;
+  font-size: 2.1em;
+  padding: 5px 9px;
+  border-radius: 100%;
+  box-shadow: 1px 1px 3px #21242b;
+}
+
+/* Go To Top */
+
+.gotoTop {
+  position: fixed;
+  right: 25px;
+  bottom: 70px;
+  background-color: #2878eb;
+  color: #fff;
+  font-size: 2em;
+  padding: 5px 15px;
+  border-radius: 100%;
+  cursor: pointer;
+  box-shadow: 1px 1px 3px #21242b;
+  user-select: none;
+  display: none;
+  transition: display 0.3s;
+}
+
+/* ------------------------------- Home Responsiveness ------------------ */
+/* Home - Footer LOGOFOOTER Small Responsiveness Code */
+@media screen and (max-width: 1296px) {
+  .footerSection {
+    .logoFooter {
+      width: 100%;
+    }
+  }
+}
+/* Small responsive Code for specific element - Testinomials */
+@media screen and (max-width: 1129px) {
+  .mainTestinomialContainer {
+    margin-top: 45px;
+    flex-flow: column;
+    align-items: center;
+    height: auto;
+    .contentTestinomial {
+      width: 90%;
+      margin-right: 0px;
+      margin-bottom: 15px;
+    }
+    .wrapper {
+      height: auto;
+      #next,
+      #prev {
+        font-size: 0.8em;
+      }
+    }
+  }
+}
+/* Small responsive Code for specific element - Why Choose Us */
+@media screen and (max-width: 999px) {
+  .ChooseUsSection {
+    background: rgba(252, 252, 252, 0.586);
+    flex-flow: column-reverse;
+    align-items: center;
+    .contentChooseUS {
+      width: 100%;
+    }
+    .sirImage {
+      width: 100%;
+    }
+  }
+}
+
+/* Small responsive Code for specific element -About Section */
+@media screen and (max-width: 827px) {
+  /* About Section */
+  .aboutSection {
+    .imgAbout {
+    }
+    .contentAbout {
+      margin-top: 15px;
+      width: 80%;
+    }
+  }
+}
+
+/* Small responsive Code for specific element - Courses Offered */
+@media (max-width: 768px) {
+  .coursesOffered {
+    .mainCourseBox {
+      .course-card {
+        .course-info {
+          h3 {
+            font-size: 16px;
+          }
+        }
+      }
+    }
+  }
+  .mainTestinomialContainer {
+    .contentTestinomial {
+    }
+    .wrapper {
+      .testinomial-container {
+        width: 100%;
+        p {
+          font-size: 0.8em;
+          text-align: center;
+          line-height: normal;
+          letter-spacing: 0.05em;
+        }
+      }
+    }
+  }
+}
+
+/* Whole Responsiveness Code is below - 605px */
+@media screen and (max-width: 605px) {
+  .iconsEmailPhone {
+    @include flexcontent();
+    padding: 2px 3px;
+    .phoneEmail {
+      a {
+        font-size: 0.9em;
+      }
+    }
+    .iconshere {
+      a {
+        font-size: 0.9em;
+      }
+    }
+  }
+  .NavbarSection {
+    .mainNavbar {
+      flex-flow: column;
+      height: 60px;
+      overflow: hidden;
+      transition: height 0.7s;
+      &.openCloseNav {
+        height: 260px;
+      }
+      .toggleBar {
+        display: block;
+        font-size: 1.3em;
+        top: 19px;
+        right: 25px;
+      }
+      .ulList {
+        flex-flow: column;
+        li {
+          margin: 5px 0px;
+        }
+      }
+    }
+  }
+  .bgCLassesName {
+    span {
+      font-size: 1.3em;
+    }
+    i {
+      font-size: 1.3em;
+      padding: 5px 15px;
+    }
+    a {
+      font-size: 1.1em;
+    }
+  }
+
+  /* About Section */
+  .aboutSection {
+    .imgAbout {
+      width: 20em;
+      height: 22em;
+    }
+    .contentAbout {
+      .wrapper {
+        .container {
+          span {
+            font-size: 1.2em;
+          }
+        }
+      }
+    }
+  }
+  /* End of 605px media Query */
+}
+
+/* Home Footer Section Small Responsive Code */
+
+@media screen and (max-width: 578px) {
+  .justAbovetheFooter {
+    p {
+      font-size: 1.2em;
+    }
+    a {
+      font-size: 1.1em;
+    }
+  }
+  .footerSection {
+    .linksAddressFooter {
+      .GetinTouchFooter {
+        .branchAdresssMain {
+          .branchAddressFooter {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}
+
+/* Small responsive Code for specific element  Abour Section, Course Offered, Toppers*/
+
+@media screen and (max-width: 437px) {
+  .aboutSection {
+    .imgAbout {
+      width: 13em;
+      height: 15em;
+    }
+    .contentAbout {
+      .wrapper {
+        .container {
+          span {
+            font-size: 0.8em;
+          }
+        }
+      }
+    }
+  }
+  .coursesOffered {
+    padding: 10px;
+    .mainCourseBox {
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      .course-card {
+        .course-info {
+          h3 {
+            font-size: 16px;
+          }
+        }
+      }
+    }
+  }
+
+  .ToppersSection {
+    padding: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+}
+
+@media screen and (max-width: 331px) {
+  .aboutSection {
+    .imgAbout {
+      width: 13em;
+      height: 15em;
+    }
+    .contentAbout {
+      .wrapper {
+        .container {
+          span {
+            font-size: 0.6em;
+          }
+        }
+      }
+    }
+  }
+}

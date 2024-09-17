@@ -1,0 +1,213 @@
+.contactPageBgImage {
+  margin-top: 0px;
+  background: linear-gradient(45deg, rgba(40, 120, 235, 0.9), rgba(40, 121, 235, 0.336)), url(../images/ContactImage.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 45vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contactPageBgImage h2 {
+  font-size: 2.2em;
+  border-bottom: 2px solid #fff;
+  color: #fff;
+}
+
+.mainContactSection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  flex-wrap: wrap;
+}
+.mainContactSection .addressPhoneEmail {
+  display: flex;
+  flex-direction: column;
+  background-color: #e9eff6;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 400px;
+}
+.mainContactSection .addressPhoneEmail .contactSmallBox {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  padding: 15px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+.mainContactSection .addressPhoneEmail .contactSmallBox .iconA {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  font-size: 24px;
+  color: #fff;
+  margin-right: 20px;
+}
+.mainContactSection .addressPhoneEmail .contactSmallBox .iconA i {
+  font-size: 24px;
+}
+.mainContactSection .addressPhoneEmail .contactSmallBox .contactMiniBox {
+  display: flex;
+  flex-direction: column;
+}
+.mainContactSection .addressPhoneEmail .contactSmallBox .contactMiniBox strong {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 5px;
+}
+.mainContactSection .addressPhoneEmail .contactSmallBox .contactMiniBox address,
+.mainContactSection .addressPhoneEmail .contactSmallBox .contactMiniBox a {
+  font-size: 14px;
+  color: #555;
+  text-decoration: none;
+}
+.mainContactSection .addressPhoneEmail .contactSmallBox .contactMiniBox a:hover {
+  text-decoration: underline;
+}
+.mainContactSection .addressPhoneEmail .fa-location-dot {
+  background-color: #007bff;
+  padding: 15px;
+  border-radius: 50%;
+}
+.mainContactSection .addressPhoneEmail .fa-phone {
+  background-color: #ff4b5c;
+  padding: 15px;
+  border-radius: 50%;
+}
+.mainContactSection .addressPhoneEmail .fa-envelope {
+  background-color: #ffc107;
+  padding: 15px;
+  border-radius: 50%;
+}
+@media (max-width: 768px) {
+  .mainContactSection .addressPhoneEmail {
+    max-width: 100%;
+    padding: 15px;
+  }
+  .mainContactSection .addressPhoneEmail .contactSmallBox .contactMiniBox strong {
+    font-size: 16px;
+  }
+  .mainContactSection .addressPhoneEmail .contactSmallBox .contactMiniBox address,
+  .mainContactSection .addressPhoneEmail .contactSmallBox .contactMiniBox a {
+    font-size: 12px;
+  }
+}
+@media (max-width: 480px) {
+  .mainContactSection .addressPhoneEmail .contactSmallBox {
+    flex-direction: column;
+    text-align: center;
+  }
+  .mainContactSection .addressPhoneEmail .contactSmallBox .iconA {
+    margin-bottom: 10px;
+    margin-right: 0;
+    font-size: 28px;
+    width: 50px;
+    height: 50px;
+  }
+  .mainContactSection .addressPhoneEmail .contactSmallBox .contactMiniBox strong {
+    font-size: 14px;
+  }
+  .mainContactSection .addressPhoneEmail .contactSmallBox .contactMiniBox address,
+  .mainContactSection .addressPhoneEmail .contactSmallBox .contactMiniBox a {
+    font-size: 12px;
+  }
+}
+.mainContactSection .contact-form {
+  max-width: 600px;
+  margin: 50px 15px;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+.mainContactSection .contact-form h6 {
+  color: #ff4b5c;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-bottom: 5px;
+  border-bottom: 1px dashed #ff4b5c;
+  display: inline-block;
+}
+.mainContactSection .contact-form h1 {
+  font-size: 36px;
+  color: #1f1e44;
+  margin-bottom: 30px;
+}
+.mainContactSection .contact-form form .form-group {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+.mainContactSection .contact-form form .form-group input {
+  width: 48%;
+  padding: 10px;
+  border: 1px solid #e0e0e0;
+  border-radius: 5px;
+  font-size: 16px;
+}
+.mainContactSection .contact-form form input,
+.mainContactSection .contact-form form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #e0e0e0;
+  border-radius: 5px;
+  font-size: 16px;
+}
+.mainContactSection .contact-form form button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+.mainContactSection .contact-form form button:hover {
+  background-color: #0056b3;
+}
+@media (max-width: 768px) {
+  .mainContactSection .contact-form form .form-group {
+    flex-direction: column;
+  }
+  .mainContactSection .contact-form form .form-group input {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .mainContactSection .contact-form form input,
+  .mainContactSection .contact-form form textarea {
+    font-size: 14px;
+  }
+  .mainContactSection .contact-form form button {
+    width: 100%;
+    font-size: 14px;
+  }
+  .mainContactSection .contact-form h1 {
+    font-size: 28px;
+  }
+  .mainContactSection .contact-form h6 {
+    font-size: 14px;
+  }
+}
+@media (max-width: 480px) {
+  .mainContactSection .contact-form form input,
+  .mainContactSection .contact-form form textarea {
+    font-size: 12px;
+  }
+  .mainContactSection .contact-form form button {
+    font-size: 12px;
+  }
+  .mainContactSection .contact-form h1 {
+    font-size: 24px;
+  }
+  .mainContactSection .contact-form h6 {
+    font-size: 12px;
+  }
+}/*# sourceMappingURL=contact.css.map */

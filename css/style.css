@@ -1,0 +1,816 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+/* Home - Top Navbar */
+.iconsEmailPhone {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 10px 35px;
+  background: #000;
+}
+.iconsEmailPhone a {
+  color: #fff;
+  margin: 0px 5px;
+}
+.iconsEmailPhone .iconshere a {
+  transition: color 0.1s;
+}
+.iconsEmailPhone .iconshere a:hover:nth-child(1) {
+  color: green;
+}
+.iconsEmailPhone .iconshere a:hover:nth-child(2) {
+  color: blue;
+}
+.iconsEmailPhone .iconshere a:hover:nth-child(3) {
+  color: purple;
+}
+.iconsEmailPhone .iconshere a:hover:nth-child(4) {
+  color: red;
+}
+.iconsEmailPhone .iconshere a:hover:nth-child(5) {
+  color: red;
+}
+
+.NavbarSection .mainNavbar {
+  background: whitesmoke;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px 35px;
+  position: relative;
+}
+.NavbarSection .mainNavbar .toggleBar {
+  position: absolute;
+  display: none;
+}
+.NavbarSection .mainNavbar .Logohead {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.NavbarSection .mainNavbar .Logohead img {
+  width: 55px;
+}
+.NavbarSection .mainNavbar .ulList {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.NavbarSection .mainNavbar .ulList li {
+  margin: 0px 10px;
+  list-style: none;
+}
+.NavbarSection .mainNavbar .ulList li a {
+  font-family: "Kanit", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.1em;
+}
+.NavbarSection .mainNavbar .ulList li a:hover {
+  color: #2878eb;
+}
+.NavbarSection .mainNavbar .btnCall {
+  background-color: #2878eb;
+  padding: 10px 20px;
+  color: #fff;
+}
+
+.bgCLassesName {
+  background: linear-gradient(45deg, rgba(40, 120, 235, 0.9), rgba(40, 120, 235, 0.9)), url(../images/bgNavImage.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 95vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  flex-flow: column;
+}
+.bgCLassesName span {
+  text-align: center;
+  font-size: 2.2em;
+  color: #fff;
+}
+.bgCLassesName i {
+  font-size: 1.8em;
+  color: #fff;
+  text-align: center;
+}
+.bgCLassesName a {
+  padding: 5px 20px;
+  border: 1px solid #fff;
+  font-size: 1.3em;
+  color: #fff;
+  transition: background 0.2s, color 0.2s, border-color 0.2s;
+}
+.bgCLassesName a:hover {
+  background: #fff;
+  color: #000;
+  border-color: #000;
+}
+.bgCLassesName .bgDesignClassName {
+  position: absolute;
+  bottom: -9px;
+}
+.bgCLassesName .bgDesignClassName img {
+  width: 100%;
+}
+
+/* Home - About Us Section */
+.aboutSection {
+  margin-top: 85px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-items: normal;
+  flex-wrap: wrap;
+}
+.aboutSection .imgAbout {
+  width: 25em;
+  height: 30em;
+}
+.aboutSection .imgAbout img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.aboutSection .contentAbout {
+  width: 50%;
+  margin-left: 15px;
+}
+.aboutSection .contentAbout strong {
+  font-size: 2.5em;
+  border-bottom: 1px dashed rgba(245, 38, 38, 0.662);
+  color: rgba(245, 38, 38, 0.662);
+}
+.aboutSection .contentAbout p {
+  margin-top: 25px;
+  font-size: 1.2em;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  color: #6b6a75;
+}
+.aboutSection .contentAbout .wrapper {
+  margin-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.aboutSection .contentAbout .wrapper .container {
+  width: 20vmin;
+  height: 18vmin;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 15px;
+  font-size: 16px;
+  background-color: #21242b;
+  color: #fff;
+}
+.aboutSection .contentAbout .wrapper .container:nth-child(1) {
+  background-color: #28a745;
+}
+.aboutSection .contentAbout .wrapper .container:nth-child(2) {
+  background-color: #2878eb;
+}
+.aboutSection .contentAbout .wrapper .container:nth-child(3) {
+  background-color: #f14d5d;
+}
+.aboutSection .contentAbout .wrapper .container:nth-child(4) {
+  background-color: #ffc107;
+}
+.aboutSection .contentAbout .wrapper .container span {
+  font-size: 1.7em;
+  font-weight: bold;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.aboutSection .contentAbout .wrapper .container .text {
+  color: #fff;
+}
+
+/*  */
+.ChooseUsSection {
+  background: url(../images/bgImage.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-top: 55px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-items: normal;
+  flex-wrap: wrap;
+  padding: 15px;
+}
+.ChooseUsSection .contentChooseUS {
+  width: 40%;
+}
+.ChooseUsSection .contentChooseUS Strong {
+  color: #f14d5d;
+  border-bottom: 1px dashed #f14d5d;
+  font-size: 1.2em;
+}
+.ChooseUsSection .contentChooseUS p {
+  margin-top: 15px;
+  font-size: 1.3em;
+  color: black;
+}
+.ChooseUsSection .contentChooseUS .iconsSomeContent {
+  margin-top: 20px;
+}
+.ChooseUsSection .contentChooseUS .iconsSomeContent .subicons {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: start;
+}
+.ChooseUsSection .contentChooseUS .iconsSomeContent .subicons i {
+  margin-right: 15px;
+  padding: 15px;
+  font-size: 1.3em;
+  width: 50px;
+  background: #28a745;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+.ChooseUsSection .sirImage {
+  width: 40%;
+}
+.ChooseUsSection .sirImage img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+/* Home - Courses Offered  */
+.couresDivHead {
+  margin-top: 95px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.couresDivHead h2 {
+  color: #f14d5d;
+  font-size: 2em;
+  border-bottom: 1px dashed #f14d5d;
+}
+
+.coursesOffered {
+  margin-top: 55px;
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  padding: 20px 70px;
+}
+.coursesOffered .mainCourseBox {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  justify-items: center;
+}
+.coursesOffered .mainCourseBox .course-card {
+  background-color: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 300px;
+  transition: transform 0.2s;
+}
+.coursesOffered .mainCourseBox .course-card .course-image img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s;
+}
+.coursesOffered .mainCourseBox .course-card .course-image img:hover {
+  transform: scale(1.05);
+}
+.coursesOffered .mainCourseBox .course-info {
+  padding: 20px;
+  text-align: left;
+}
+.coursesOffered .mainCourseBox .course-info h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #333;
+}
+.coursesOffered .btnMoreCourses {
+  margin-top: 55px;
+  text-align: center;
+}
+.coursesOffered .btnMoreCourses a {
+  padding: 5px 20px;
+  background-color: #2878eb;
+  color: #fff;
+  box-shadow: 1.2px 1.2px 5px #21242b;
+  transition: box-shadow 0.2s;
+}
+.coursesOffered .btnMoreCourses a:hover {
+  box-shadow: 1px 1px 2px #21242b;
+}
+
+/* Home - Our Toppers */
+.OurToppers {
+  margin-top: 75px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.OurToppers h2 {
+  color: #f14d5d;
+  font-size: 2em;
+  border-bottom: 1px dashed #f14d5d;
+}
+
+.ToppersSection {
+  margin-top: 55px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  justify-items: center;
+  padding: 20px 70px;
+}
+.ToppersSection .topperImgName {
+  background-color: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 300px;
+  box-shadow: 1px 1px 4px grey;
+}
+.ToppersSection .topperImgName .topperImg {
+  height: 320px;
+}
+.ToppersSection .topperImgName .topperImg img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transition: transform 0.3s;
+}
+.ToppersSection .topperImgName .topperName {
+  padding: 5px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 4px;
+}
+.ToppersSection .topperImgName .topperName strong {
+  border-bottom: 1px solid #000;
+}
+.ToppersSection .topperImgName .topperName span {
+  font-size: 1.1em;
+}
+
+/* Home - Testinomials - Our Happy Students */
+.mainTestinomialContainer {
+  background: url(../images/bgImage.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-top: 85px;
+  position: relative;
+  height: 55vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-items: normal;
+}
+.mainTestinomialContainer .contentTestinomial {
+  width: 30%;
+  margin-right: 15px;
+}
+.mainTestinomialContainer .contentTestinomial strong {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 2.2em;
+}
+.mainTestinomialContainer .contentTestinomial p {
+  margin-top: 15px;
+  color: black;
+}
+.mainTestinomialContainer .wrapper {
+  background-color: #ffffff;
+  position: relative;
+  width: 80vw;
+  max-width: 41em;
+  height: 20em;
+  border-radius: 0.6em;
+  box-shadow: 0 1.8em 3em rgba(1, 17, 39, 0.15);
+  display: flex;
+}
+.mainTestinomialContainer .wrapper .testinomial-container {
+  width: 85%;
+  height: 100%;
+  position: relative;
+  margin: auto;
+  padding: 1.8em 1.2em;
+}
+.mainTestinomialContainer .wrapper .testinomial-container p {
+  text-align: center;
+  font-size: 0.9em;
+  line-height: 2em;
+  letter-spacing: 0.05em;
+}
+.mainTestinomialContainer .wrapper .testinomial-container img {
+  width: 4.4em;
+  height: 4em;
+  -o-object-fit: cover;
+     object-fit: cover;
+  display: block;
+  margin: 1.8em auto 1.25em auto;
+  border-radius: 100%;
+  transform: scale(1.2);
+}
+.mainTestinomialContainer .wrapper .testinomial-container h3 {
+  color: #000;
+  font-size: 1em;
+  text-align: center;
+}
+.mainTestinomialContainer .wrapper button {
+  font-size: 1.8em;
+  height: 2.2em;
+  width: 2.2em;
+  background-color: #ffffff;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  border: none;
+  color: #ff02ff;
+  box-shadow: 0 0 1em rgba(1, 17, 39, 0.25);
+  cursor: pointer;
+  border-radius: 50%;
+}
+.mainTestinomialContainer .wrapper #next {
+  right: -1.1em;
+}
+.mainTestinomialContainer .wrapper #prev {
+  left: -1.1em;
+}
+
+/* Home - Just Above the Footer Enquiry & Admission */
+.justAbovetheFooter {
+  background: linear-gradient(45deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../images/apply.webp);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+  margin-top: 40px;
+  height: 70vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.justAbovetheFooter p {
+  text-align: center;
+  font-size: 1.7em;
+  color: #fff;
+  margin: 25px 2px;
+}
+.justAbovetheFooter a {
+  padding: 5px 15px;
+  text-decoration: none;
+  color: #fff;
+  border: 1px solid #fff;
+  font-size: 1.3em;
+  transition: background 0.3s;
+}
+.justAbovetheFooter a:hover {
+  background: #2878eb;
+}
+
+/* Home - Footer */
+.footerSection {
+  background: #291a51;
+  justify-content: 0;
+  flex-direction: column;
+  position: relative;
+  color: #fff;
+  padding: 15px;
+  padding-top: 55px;
+}
+.footerSection .logoFooter {
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+.footerSection .logoFooter img {
+  width: 5em;
+  box-shadow: 1px 1px 4px #21242b;
+  border-radius: 5px;
+}
+.footerSection .linksAddressFooter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-items: normal;
+  flex-wrap: wrap;
+  gap: 74px;
+}
+.footerSection .linksAddressFooter .GetinTouchFooter {
+  display: grid;
+  gap: 15px;
+}
+.footerSection .linksAddressFooter .GetinTouchFooter .branchAdresssMain .branchAddressFooter {
+  margin-top: 15px;
+  width: 70%;
+}
+.footerSection .linksAddressFooter .GetinTouchFooter .branchAdresssMain .branchAddressFooter a {
+  text-decoration: underline;
+  color: #fff;
+}
+.footerSection .linksAddressFooter .GetinTouchFooter .branchAdresssMain .branchAddressFooter a i {
+  color: rgb(199, 8, 8);
+}
+.footerSection .linksAddressFooter .GetinTouchFooter .phoneEmailFooter {
+  font-size: 1.1em;
+  text-decoration: underline;
+}
+.footerSection .linksAddressFooter .GetinTouchFooter .phoneEmailFooter a {
+  color: #fff;
+}
+.footerSection .linksAddressFooter .GetinTouchFooter .socialIconsFooter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: left;
+  align-items: end;
+  gap: 5px;
+  flex-wrap: wrap;
+}
+.footerSection .linksAddressFooter .GetinTouchFooter .socialIconsFooter span {
+  font-size: 1.2em;
+}
+.footerSection .linksAddressFooter .GetinTouchFooter .socialIconsFooter a {
+  padding: 10px;
+  border: 1px solid #fff;
+  color: #fff;
+  transition: background 0.3s, color 0.3s, border-color 0.3s;
+}
+.footerSection .linksAddressFooter .GetinTouchFooter .socialIconsFooter a:hover:nth-child(2) {
+  background: rgb(12, 149, 12);
+  color: #fff;
+  border-color: #fff;
+}
+.footerSection .linksAddressFooter .GetinTouchFooter .socialIconsFooter a:hover:nth-child(3) {
+  background: rgb(2, 192, 255);
+  color: #fff;
+  border-color: #fff;
+}
+.footerSection .linksAddressFooter .GetinTouchFooter .socialIconsFooter a:hover:nth-child(4) {
+  background: purple;
+  color: #fff;
+  border-color: #fff;
+}
+.footerSection .linksAddressFooter .GetinTouchFooter .socialIconsFooter a:hover:nth-child(5) {
+  background: red;
+  color: #fff;
+  border-color: #fff;
+}
+.footerSection .linksAddressFooter .quickLinks {
+  font-size: 1.2em;
+}
+.footerSection .linksAddressFooter .quickLinks li {
+  margin-top: 15px;
+  list-style: none;
+}
+.footerSection .linksAddressFooter .quickLinks li a {
+  text-decoration: underline;
+  color: #fff;
+}
+.footerSection .linksAddressFooter .quickLinks li a:hover {
+  color: #2878eb;
+}
+.footerSection .bgDesignfooterSection {
+  position: absolute;
+  left: 0px;
+  top: -62px;
+}
+.footerSection .bgDesignfooterSection img {
+  width: 100%;
+  filter: brightness(0) saturate(100%) invert(13%) sepia(22%) saturate(5000%) hue-rotate(238deg) brightness(82%) contrast(99%);
+}
+
+/* .colored-image {
+  filter: brightness(0) saturate(100%) invert(13%) sepia(22%) saturate(5000%)
+    hue-rotate(238deg) brightness(82%) contrast(99%);
+} */
+/* Whatsapp chat Link Icon */
+.whatsappChatIcon {
+  position: fixed;
+  right: 25px;
+  bottom: 15px;
+  background-color: #28a745;
+  color: #fff;
+  font-size: 2.1em;
+  padding: 5px 9px;
+  border-radius: 100%;
+  box-shadow: 1px 1px 3px #21242b;
+}
+
+/* Go To Top */
+.gotoTop {
+  position: fixed;
+  right: 25px;
+  bottom: 70px;
+  background-color: #2878eb;
+  color: #fff;
+  font-size: 2em;
+  padding: 5px 15px;
+  border-radius: 100%;
+  cursor: pointer;
+  box-shadow: 1px 1px 3px #21242b;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  display: none;
+  transition: display 0.3s;
+}
+
+/* ------------------------------- Home Responsiveness ------------------ */
+/* Home - Footer LOGOFOOTER Small Responsiveness Code */
+@media screen and (max-width: 1296px) {
+  .footerSection .logoFooter {
+    width: 100%;
+  }
+}
+/* Small responsive Code for specific element - Testinomials */
+@media screen and (max-width: 1129px) {
+  .mainTestinomialContainer {
+    margin-top: 45px;
+    flex-flow: column;
+    align-items: center;
+    height: auto;
+  }
+  .mainTestinomialContainer .contentTestinomial {
+    width: 90%;
+    margin-right: 0px;
+    margin-bottom: 15px;
+  }
+  .mainTestinomialContainer .wrapper {
+    height: auto;
+  }
+  .mainTestinomialContainer .wrapper #next,
+  .mainTestinomialContainer .wrapper #prev {
+    font-size: 0.8em;
+  }
+}
+/* Small responsive Code for specific element - Why Choose Us */
+@media screen and (max-width: 999px) {
+  .ChooseUsSection {
+    background: rgba(252, 252, 252, 0.586);
+    flex-flow: column-reverse;
+    align-items: center;
+  }
+  .ChooseUsSection .contentChooseUS {
+    width: 100%;
+  }
+  .ChooseUsSection .sirImage {
+    width: 100%;
+  }
+}
+/* Small responsive Code for specific element -About Section */
+@media screen and (max-width: 827px) {
+  /* About Section */
+  .aboutSection .contentAbout {
+    margin-top: 15px;
+    width: 80%;
+  }
+}
+/* Small responsive Code for specific element - Courses Offered */
+@media (max-width: 768px) {
+  .coursesOffered .mainCourseBox .course-card .course-info h3 {
+    font-size: 16px;
+  }
+  .mainTestinomialContainer .wrapper .testinomial-container {
+    width: 100%;
+  }
+  .mainTestinomialContainer .wrapper .testinomial-container p {
+    font-size: 0.8em;
+    text-align: center;
+    line-height: normal;
+    letter-spacing: 0.05em;
+  }
+}
+/* Whole Responsiveness Code is below - 605px */
+@media screen and (max-width: 605px) {
+  .iconsEmailPhone {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2px 3px;
+  }
+  .iconsEmailPhone .phoneEmail a {
+    font-size: 0.9em;
+  }
+  .iconsEmailPhone .iconshere a {
+    font-size: 0.9em;
+  }
+  .NavbarSection .mainNavbar {
+    flex-flow: column;
+    height: 60px;
+    overflow: hidden;
+    transition: height 0.7s;
+  }
+  .NavbarSection .mainNavbar.openCloseNav {
+    height: 260px;
+  }
+  .NavbarSection .mainNavbar .toggleBar {
+    display: block;
+    font-size: 1.3em;
+    top: 19px;
+    right: 25px;
+  }
+  .NavbarSection .mainNavbar .ulList {
+    flex-flow: column;
+  }
+  .NavbarSection .mainNavbar .ulList li {
+    margin: 5px 0px;
+  }
+  .bgCLassesName span {
+    font-size: 1.3em;
+  }
+  .bgCLassesName i {
+    font-size: 1.3em;
+    padding: 5px 15px;
+  }
+  .bgCLassesName a {
+    font-size: 1.1em;
+  }
+  /* About Section */
+  .aboutSection .imgAbout {
+    width: 20em;
+    height: 22em;
+  }
+  .aboutSection .contentAbout .wrapper .container span {
+    font-size: 1.2em;
+  }
+  /* End of 605px media Query */
+}
+/* Home Footer Section Small Responsive Code */
+@media screen and (max-width: 578px) {
+  .justAbovetheFooter p {
+    font-size: 1.2em;
+  }
+  .justAbovetheFooter a {
+    font-size: 1.1em;
+  }
+  .footerSection .linksAddressFooter .GetinTouchFooter .branchAdresssMain .branchAddressFooter {
+    width: 100%;
+  }
+}
+/* Small responsive Code for specific element  Abour Section, Course Offered, Toppers*/
+@media screen and (max-width: 437px) {
+  .aboutSection .imgAbout {
+    width: 13em;
+    height: 15em;
+  }
+  .aboutSection .contentAbout .wrapper .container span {
+    font-size: 0.8em;
+  }
+  .coursesOffered {
+    padding: 10px;
+  }
+  .coursesOffered .mainCourseBox {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+  .coursesOffered .mainCourseBox .course-card .course-info h3 {
+    font-size: 16px;
+  }
+  .ToppersSection {
+    padding: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+}
+@media screen and (max-width: 331px) {
+  .aboutSection .imgAbout {
+    width: 13em;
+    height: 15em;
+  }
+  .aboutSection .contentAbout .wrapper .container span {
+    font-size: 0.6em;
+  }
+}/*# sourceMappingURL=style.css.map */

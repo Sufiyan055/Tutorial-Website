@@ -1,0 +1,93 @@
+@mixin flexcontent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+$pgColor: #6b6a75;
+$TextColor: #f14d5d;
+
+@mixin fontSizeHead {
+  color: $TextColor;
+  font-size: 2em;
+  border-bottom: 1px dashed $TextColor;
+}
+.gallerySectionWallpaper {
+  background: linear-gradient(
+      45deg,
+      rgba(40, 120, 235, 0.9),
+      rgba(40, 121, 235, 0.336)
+    ),
+    url(../images/GalleryBgSecondTop.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 45vh;
+  @include flexcontent();
+  h2 {
+    font-size: 2.2em;
+    border-bottom: 2px solid #fff;
+    color: #fff;
+  }
+}
+
+.galleryPhotosSection {
+  padding: 15px 20px;
+  margin: 100px auto 50px;
+  columns: 300px;
+  img {
+    width: 100%;
+    cursor: pointer;
+    transition: transform 0.3s, border-radius 0.3s, box-shadow 0.3s;
+    &:hover {
+      transform: scale(0.8) rotate(-15deg);
+      border-radius: 20px;
+      box-shadow: 0 32px 75px rgba(68, 77, 136, 0.2);
+    }
+  }
+}
+
+.fullImage {
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.9);
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+  img {
+    width: 90%;
+    height: 90%;
+    object-fit: contain;
+    max-width: 700px;
+  }
+  span {
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    font-size: 30px;
+    color: #fff;
+    cursor: pointer;
+    padding: 9px;
+    transition: color 0.3s;
+    &:hover {
+      color: red;
+    }
+  }
+}
+
+/* Gallery - Responsive code */
+@media screen and (max-width: 406px) {
+  .gallerySectionWallpaper {
+    h2 {
+      font-size: 1.2em;
+    }
+  }
+}

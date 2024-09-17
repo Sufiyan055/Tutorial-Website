@@ -1,0 +1,21 @@
+.coursesOfferedCo {
+  margin-bottom: 70px;
+  background-color: #fff;
+}
+
+.courseBackgroundTop {
+  margin-top: 0px;
+  background: linear-gradient(45deg, rgba(40, 120, 235, 0.9), rgba(40, 121, 235, 0.336)), url(../images/studyImgTwo.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 45vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.courseBackgroundTop h2 {
+  font-size: 2.2em;
+  border-bottom: 2px solid #fff;
+  color: #fff;
+}/*# sourceMappingURL=courses.css.map */

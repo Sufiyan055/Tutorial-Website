@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/gallery.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,400;1,100&display=swap"
+      rel="stylesheet"
+    />
+    <title>Gallery Tutoriol</title>
+  </head>
+  <body>
+    <!-- Gallery - Top Section Navbar -->
+    <div class="iconsEmailPhone">
+      <div class="phoneEmail">
+        <a href="tel:+917304888579"
+          ><i class="fa-solid fa-phone"></i>+9112345678</a
+        >
+        <a href="mailto:abc@gmail.com"
+          ><i class="fa-regular fa-envelope"></i> abc@gmail.com</a
+        >
+      </div>
+      <div class="iconshere">
+        <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+
+        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+
+        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+
+        <a href="#"><i class="fa-solid fa-location-dot"></i></a>
+      </div>
+    </div>
+    <section class="NavbarSection">
+      <nav class="mainNavbar" id="mainNavbar">
+        <i class="fa-solid fa-bars toggleBar" id="toggleBar"></i>
+        <div class="Logohead">
+          <img src="images/Logo.png" alt="logo" />
+          <h1>Education</h1>
+        </div>
+        <ul class="ulList">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="gallery.html" style="color: #2878eb">Gallery</a></li>
+          <li><a href="courses.html">Courses</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <a href="#" class="btnCall">Call Us</a>
+      </nav>
+    </section>
+    <!-- Gallery - Top Section Navbar -->
+    <!-- Photo Section Start -->
+    <section class="gallerySectionWallpaper">
+      <h2>Our Gallery</h2>
+    </section>
+    <!-- Photo Section End -->
+
+    <!-- Full Image After Click Start -->
+    <div class="fullImage" id="fullImageBox">
+      <img src="images/Faculty.jpg" id="fullImg" alt="Image" />
+      <span onclick="closeFullImg()">X</span>
+    </div>
+    <!-- Full Image After Click End -->
+
+    <!-- Photos Section Start  -->
+    <section class="galleryPhotosSection">
+      <img
+        src="images/Faculty.jpg"
+        onclick="openFullImg(this.src)"
+        alt="Image"
+      />
+
+      <img
+        src="images/galleryOne.webp"
+        onclick="openFullImg(this.src)"
+        alt="Image"
+      />
+
+      <img
+        src="images/galleryTwo.webp"
+        onclick="openFullImg(this.src)"
+        alt="Image"
+      />
+
+      <img
+        src="images/bgNavImage.jpg"
+        onclick="openFullImg(this.src)"
+        alt="Image"
+      />
+
+      <img
+        src="images/apply.webp"
+        onclick="openFullImg(this.src)"
+        alt="Image"
+      />
+
+      <img
+        src="images/StImg3.webp"
+        onclick="openFullImg(this.src)"
+        alt="Image"
+      />
+
+      <img
+        src="images/StImg4.webp"
+        onclick="openFullImg(this.src)"
+        alt="Image"
+      />
+
+      <img
+        src="images/StImg1.webp"
+        onclick="openFullImg(this.src)"
+        alt="Image"
+      />
+
+      <img
+        src="images/studyImg.jpg"
+        onclick="openFullImg(this.src)"
+        alt="Image"
+      />
+
+      <img
+        src="images/StImg2.webp"
+        onclick="openFullImg(this.src)"
+        alt="Image"
+      />
+
+      <img
+        src="images/StImg5.jpg"
+        onclick="openFullImg(this.src)"
+        alt="Image"
+      />
+      <img
+        src="images/bgNavImage.jpg"
+        onclick="openFullImg(this.src)"
+        alt="Image"
+      />
+
+      <img
+        src="images/StImg4.webp"
+        onclick="openFullImg(this.src)"
+        alt="Image"
+      />
+
+      <img
+        src="images/StImg2.webp"
+        onclick="openFullImg(this.src)"
+        alt="Image"
+      />
+    </section>
+    <!-- Photos Section End  -->
+
+    <!-- Courses - Footer -->
+
+    <footer class="footerSection">
+      <span class="bgDesignfooterSection">
+        <img src="images/bgDesignTop.png" />
+      </span>
+      <div class="logoFooter">
+        <img src="images/Logo.png" alt="logo" />
+        <h1>Education</h1>
+      </div>
+      <!--  -->
+      <div class="linksAddressFooter">
+        <div class="GetinTouchFooter">
+          <div class="branchAdresssMain">
+            <div class="branchAddressFooter">
+              <a href="#"
+                ><i class="fa-solid fa-location-dot"></i>First Branch</a
+              >
+              <address>
+                ANAND SHANTI NAGAR, CHSL, SECTOR-04,A7/104, SHANTI NAGAR, MIRA
+                ROAD (E).
+              </address>
+            </div>
+            <div class="branchAddressFooter">
+              <a href="#"
+                ><i class="fa-solid fa-location-dot"></i>Second Branch</a
+              >
+              <address>
+                Shop no-29, Ritu Paradise, Phase- 1, near GGC Club, Mira Road
+                (E), Thane- 401107.
+              </address>
+            </div>
+          </div>
+          <!--  -->
+          <div class="phoneEmailFooter">
+            <a href="tel:+917304888579"
+              ><i class="fa-solid fa-phone"></i>+9112345678</a
+            >
+            <br />
+            <a href="mailto:abc@gmail.com"
+              ><i class="fa-regular fa-envelope"></i> abc@gmail.com</a
+            >
+          </div>
+          <!--  -->
+          <div class="socialIconsFooter">
+            <span>Follow Us</span>
+            <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+
+            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+          </div>
+        </div>
+        <!--  -->
+        <div class="quickLinks">
+          <strong>Quick Links</strong>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="courses.html">Courses</a></li>
+          <li><a href="gallery.html" style="color: #2878eb">Gallery</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </div>
+      </div>
+    </footer>
+    <div
+      style="
+        text-align: center;
+        padding: 15px;
+        background-color: #291a51;
+        color: #fff;
+      "
+    >
+      2024-2030 &copy; All Right Reserved
+    </div>
+
+    <!-- Gototop -->
+    <span class="gotoTop" onclick="goToTop()">&#x2191;</span>
+
+    <!-- Whatsapp link with some text -->
+
+    <a
+      href="https://wa.me/918828074298"
+      target="_blank"
+      class="whatsappChatIcon"
+      ><i class="fa-brands fa-whatsapp"></i
+    ></a>
+
+    <!-- Script -->
+
+    <script>
+      let fullImgBox = document.getElementById("fullImageBox");
+      let fullImg = document.getElementById("fullImg");
+
+      function openFullImg(pic) {
+        fullImgBox.style.display = "flex";
+        fullImg.src = pic;
+      }
+
+      function closeFullImg() {
+        fullImgBox.style.display = "none";
+      }
+    </script>
+
+    <script src="script/app.js"></script>
+  </body>
+</html>
