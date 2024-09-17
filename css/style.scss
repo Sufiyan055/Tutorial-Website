@@ -219,6 +219,7 @@ $TextColor: #f14d5d;
 
 .ChooseUsSection {
   background: url(../images/bgImage.png);
+  background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
   margin-top: 55px;
@@ -389,6 +390,7 @@ $TextColor: #f14d5d;
   background: url(../images/bgImage.png);
   background-size: cover;
   background-repeat: no-repeat;
+  background-attachment: fixed;
   margin-top: 85px;
   position: relative;
   height: 55vh;
@@ -605,7 +607,7 @@ $TextColor: #f14d5d;
   .bgDesignfooterSection {
     position: absolute;
     left: 0px;
-    top: -62px;
+    top: -65px;
     img {
       width: 100%;
       filter: brightness(0) saturate(100%) invert(13%) sepia(22%)
@@ -659,7 +661,17 @@ $TextColor: #f14d5d;
       width: 100%;
     }
   }
+  .footerSection {
+    .bgDesignfooterSection {
+      display: none;
+      left: 0px;
+      top: -45px;
+      img {
+      }
+    }
+  }
 }
+
 /* Small responsive Code for specific element - Testinomials */
 @media screen and (max-width: 1129px) {
   .mainTestinomialContainer {
@@ -680,6 +692,14 @@ $TextColor: #f14d5d;
       }
     }
   }
+  .footerSection {
+    .bgDesignfooterSection {
+      left: 0px;
+      top: -45px;
+      img {
+      }
+    }
+  }
 }
 /* Small responsive Code for specific element - Why Choose Us */
 @media screen and (max-width: 999px) {
@@ -692,6 +712,14 @@ $TextColor: #f14d5d;
     }
     .sirImage {
       width: 100%;
+    }
+  }
+  .footerSection {
+    .bgDesignfooterSection {
+      left: 0px;
+      top: -40px;
+      img {
+      }
     }
   }
 }

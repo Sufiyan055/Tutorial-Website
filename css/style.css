@@ -207,6 +207,7 @@ a {
 /*  */
 .ChooseUsSection {
   background: url(../images/bgImage.png);
+  background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
   margin-top: 55px;
@@ -387,6 +388,7 @@ a {
   background: url(../images/bgImage.png);
   background-size: cover;
   background-repeat: no-repeat;
+  background-attachment: fixed;
   margin-top: 85px;
   position: relative;
   height: 55vh;
@@ -608,7 +610,7 @@ a {
 .footerSection .bgDesignfooterSection {
   position: absolute;
   left: 0px;
-  top: -62px;
+  top: -65px;
 }
 .footerSection .bgDesignfooterSection img {
   width: 100%;
@@ -657,6 +659,11 @@ a {
   .footerSection .logoFooter {
     width: 100%;
   }
+  .footerSection .bgDesignfooterSection {
+    display: none;
+    left: 0px;
+    top: -45px;
+  }
 }
 /* Small responsive Code for specific element - Testinomials */
 @media screen and (max-width: 1129px) {
@@ -678,6 +685,10 @@ a {
   .mainTestinomialContainer .wrapper #prev {
     font-size: 0.8em;
   }
+  .footerSection .bgDesignfooterSection {
+    left: 0px;
+    top: -45px;
+  }
 }
 /* Small responsive Code for specific element - Why Choose Us */
 @media screen and (max-width: 999px) {
@@ -691,6 +702,10 @@ a {
   }
   .ChooseUsSection .sirImage {
     width: 100%;
+  }
+  .footerSection .bgDesignfooterSection {
+    left: 0px;
+    top: -40px;
   }
 }
 /* Small responsive Code for specific element -About Section */
