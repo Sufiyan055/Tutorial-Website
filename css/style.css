@@ -431,6 +431,7 @@ a {
   font-size: 0.9em;
   line-height: 2em;
   letter-spacing: 0.05em;
+  font-family: Arial, Helvetica, sans-serif;
 }
 .mainTestinomialContainer .wrapper .testinomial-container img {
   width: 4.4em;
@@ -509,7 +510,7 @@ a {
   position: relative;
   color: #fff;
   padding: 15px;
-  padding-top: 55px;
+  padding-top: 59px;
 }
 .footerSection .logoFooter {
   width: 20%;
@@ -608,13 +609,14 @@ a {
   color: #2878eb;
 }
 .footerSection .bgDesignfooterSection {
-  position: absolute;
-  left: 0px;
-  top: -65px;
-}
-.footerSection .bgDesignfooterSection img {
+  background: url(../images/BgDesignPictureCrop.png);
+  background-repeat: no-repeat;
+  background-size: cover;
   width: 100%;
-  filter: brightness(0) saturate(100%) invert(13%) sepia(22%) saturate(5000%) hue-rotate(238deg) brightness(82%) contrast(99%);
+  height: 6em;
+  left: 0px;
+  top: -40px;
+  position: absolute;
 }
 
 /* .colored-image {
@@ -642,7 +644,7 @@ a {
   background-color: #2878eb;
   color: #fff;
   font-size: 2em;
-  padding: 5px 15px;
+  padding: 5px 17px;
   border-radius: 100%;
   cursor: pointer;
   box-shadow: 1px 1px 3px #21242b;
@@ -660,7 +662,6 @@ a {
     width: 100%;
   }
   .footerSection .bgDesignfooterSection {
-    display: none;
     left: 0px;
     top: -45px;
   }
@@ -702,10 +703,6 @@ a {
   }
   .ChooseUsSection .sirImage {
     width: 100%;
-  }
-  .footerSection .bgDesignfooterSection {
-    left: 0px;
-    top: -40px;
   }
 }
 /* Small responsive Code for specific element -About Section */

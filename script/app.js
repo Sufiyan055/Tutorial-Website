@@ -73,25 +73,25 @@ const testinomials = [
     name: "Ethan Thompson",
     image: "images/StImg3.webp",
     testinomial:
-      "Outstanding Tutorial! Clear instructions, practical examples, and interactive exercises made complex topics easy to grasp. The instructor’s expertise and enthusiasm were evident throughout. Highly recommend for anyone looking to master CBSE!",
+      "Excellent tutorial! The explanations were crystal clear, and the examples were spot on. I was able to follow along easily and learned so much. Highly recommend!",
   },
   {
     name: "Emily Wilson",
     image: "images/StImg1.webp",
     testinomial:
-      "Outstanding Tutorial! Clear instructions, practical examples, and interactive exercises made complex topics easy to grasp. The instructor’s expertise and enthusiasm were evident throughout. Highly recommend for anyone looking to master CBSE!",
+      "This tutorial exceeded my expectations! The instructor's teaching style is engaging, informative, and concise. I gained practical skills that I can apply immediately. Awesome job!",
   },
   {
     name: "Lucas Brooks",
     image: "images/StImg4.webp",
     testinomial:
-      "Outstanding Tutorial! Clear instructions, practical examples, and interactive exercises made complex topics easy to grasp. The instructor’s expertise and enthusiasm were evident throughout. Highly recommend for anyone looking to master CBSE!",
+      "I was struggling to understand the concept until I took this tutorial. Now, I feel confident and empowered! The pace was perfect, and the materials were top-notch. Thank you!",
   },
   {
     name: "Avery Mitchell",
     image: "images/StImg2.webp",
     testinomial:
-      "Outstanding Tutorial! Clear instructions, practical examples, and interactive exercises made complex topics easy to grasp. The instructor’s expertise and enthusiasm were evident throughout. Highly recommend for anyone looking to master CBSE!",
+      "Outstanding tutorial! The instructor broke down complex topics into bite-sized chunks, making it easy to grasp. The interactive exercises reinforced my learning beautifully. 10/10 would recommend!",
   },
 ];
 
