@@ -666,8 +666,6 @@ $TextColor: #f14d5d;
     .bgDesignfooterSection {
       left: 0px;
       top: -45px;
-      img {
-      }
     }
   }
 }
@@ -696,8 +694,6 @@ $TextColor: #f14d5d;
     .bgDesignfooterSection {
       left: 0px;
       top: -45px;
-      img {
-      }
     }
   }
 }
@@ -809,6 +805,9 @@ $TextColor: #f14d5d;
     a {
       font-size: 1.1em;
     }
+    .bgDesignClassName {
+      bottom: -6px;
+    }
   }
 
   /* About Section */
@@ -821,7 +820,7 @@ $TextColor: #f14d5d;
       .wrapper {
         .container {
           span {
-            font-size: 1em;
+            font-size: 1.2em;
           }
         }
       }
@@ -852,6 +851,19 @@ $TextColor: #f14d5d;
       }
     }
   }
+  .aboutSection {
+    .imgAbout {
+    }
+    .contentAbout {
+      .wrapper {
+        .container {
+          span {
+            font-size: 1.09em;
+          }
+        }
+      }
+    }
+  }
 }
 
 /* Small responsive Code for specific element  Abour Section, Course Offered, Toppers*/
@@ -866,7 +878,7 @@ $TextColor: #f14d5d;
       .wrapper {
         .container {
           span {
-            font-size: 0.7em;
+            font-size: 0.9em;
           }
         }
       }
@@ -892,6 +904,22 @@ $TextColor: #f14d5d;
   }
 }
 
+@media screen and (max-width: 392px) {
+  .aboutSection {
+    .imgAbout {
+    }
+    .contentAbout {
+      .wrapper {
+        .container {
+          padding: 0px;
+          span {
+            font-size: 0.8em;
+          }
+        }
+      }
+    }
+  }
+}
 @media screen and (max-width: 331px) {
   .aboutSection {
     .imgAbout {
@@ -903,7 +931,21 @@ $TextColor: #f14d5d;
         .container {
           padding: 0px;
           span {
-            font-size: 0.5em;
+            font-size: 0.8em;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 287px) {
+  .aboutSection {
+    .contentAbout {
+      .wrapper {
+        .container {
+          padding: 0px;
+          span {
+            font-size: 0.6em;
           }
         }
       }

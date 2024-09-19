@@ -773,13 +773,16 @@ a {
   .bgCLassesName a {
     font-size: 1.1em;
   }
+  .bgCLassesName .bgDesignClassName {
+    bottom: -6px;
+  }
   /* About Section */
   .aboutSection .imgAbout {
     width: 20em;
     height: 22em;
   }
   .aboutSection .contentAbout .wrapper .container span {
-    font-size: 1em;
+    font-size: 1.2em;
   }
   /* End of 605px media Query */
 }
@@ -794,6 +797,9 @@ a {
   .footerSection .linksAddressFooter .GetinTouchFooter .branchAdresssMain .branchAddressFooter {
     width: 100%;
   }
+  .aboutSection .contentAbout .wrapper .container span {
+    font-size: 1.09em;
+  }
 }
 /* Small responsive Code for specific element  Abour Section, Course Offered, Toppers*/
 @media screen and (max-width: 437px) {
@@ -802,7 +808,7 @@ a {
     height: 15em;
   }
   .aboutSection .contentAbout .wrapper .container span {
-    font-size: 0.7em;
+    font-size: 0.9em;
   }
   .coursesOffered {
     padding: 10px;
@@ -818,6 +824,14 @@ a {
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   }
 }
+@media screen and (max-width: 392px) {
+  .aboutSection .contentAbout .wrapper .container {
+    padding: 0px;
+  }
+  .aboutSection .contentAbout .wrapper .container span {
+    font-size: 0.8em;
+  }
+}
 @media screen and (max-width: 331px) {
   .aboutSection .imgAbout {
     width: 13em;
@@ -827,6 +841,14 @@ a {
     padding: 0px;
   }
   .aboutSection .contentAbout .wrapper .container span {
-    font-size: 0.5em;
+    font-size: 0.8em;
+  }
+}
+@media screen and (max-width: 287px) {
+  .aboutSection .contentAbout .wrapper .container {
+    padding: 0px;
+  }
+  .aboutSection .contentAbout .wrapper .container span {
+    font-size: 0.6em;
   }
 }/*# sourceMappingURL=style.css.map */
