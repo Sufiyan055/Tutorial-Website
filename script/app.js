@@ -2,8 +2,6 @@ let mainNavbar = document.getElementById("mainNavbar");
 let toggleBar = document.getElementById("toggleBar");
 let gotoTop = document.querySelector(".gotoTop");
 
-/* Go to Top */
-
 window.onscroll = function () {
   scrollForTopBtn();
 };
@@ -49,20 +47,18 @@ function sendtoWhatsapp() {
   window.open(url, "_blank").focus();
 }
 
-// Counting Animation
 document.addEventListener("DOMContentLoaded", function () {
   const counters = document.querySelectorAll(".num");
 
-  // Function to start the counting animation for each counter
   function startCounting(counter) {
     const target = +counter.getAttribute("data-target");
-    const increment = target / 100; // Adjust increment for smooth animation
+    const increment = target / 100;
     let count = 0;
 
     const interval = setInterval(() => {
       count += increment;
       if (count >= target) {
-        counter.innerText = target; // Ensure it matches the target exactly
+        counter.innerText = target;
         clearInterval(interval);
       } else {
         counter.innerText = Math.ceil(count);
@@ -70,27 +66,24 @@ document.addEventListener("DOMContentLoaded", function () {
     }, 20);
   }
 
-  // Observer callback function to check if elements are in view
   const observer = new IntersectionObserver(
     (entries) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
           const counter = entry.target;
           startCounting(counter);
-          observer.unobserve(counter); // Stop observing once counted
+          observer.unobserve(counter);
         }
       });
     },
     {
-      threshold: 0.1, // Trigger when 10% of the counter is visible
+      threshold: 0.1,
     }
   );
 
-  // Start observing all counters
   counters.forEach((counter) => observer.observe(counter));
 });
 
-/* Home - TESTINOMIAL  */
 const testinomials = [
   {
     name: "Ethan Thompson",
@@ -118,10 +111,8 @@ const testinomials = [
   },
 ];
 
-//current Slide
 let i = 0;
 
-//Total Slide
 let j = testinomials.length;
 
 let testinomialContainer = document.getElementById("testinomial-container");
@@ -147,7 +138,3 @@ let displayTestimnial = () => {
 };
 
 window.onload = displayTestimnial();
-
-/*  */
-
-/* Gallery Page js code is in gallery.html*/
