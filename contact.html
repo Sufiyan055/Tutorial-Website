@@ -48,10 +48,10 @@
     <section class="NavbarSection">
       <nav class="mainNavbar" id="mainNavbar">
         <i class="fa-solid fa-bars toggleBar" id="toggleBar"></i>
-        <div class="Logohead">
+        <a href="index.html" class="Logohead">
           <img src="images/Logo.png" alt="logo" />
           <h1>Education</h1>
-        </div>
+        </a>
         <ul class="ulList">
           <li><a href="index.html">Home</a></li>
           <li><a href="gallery.html">Gallery</a></li>
@@ -109,23 +109,41 @@
         <h1>Send Us A Message</h1>
         <form action="https://formspree.io/f/mqkvqkjn" method="POST">
           <div class="form-group">
-            <input type="text" name="name" placeholder="Your Name" required />
             <input
-              type="email"
-              name="email"
-              placeholder="Your Email"
+              type="text"
+              name="name"
+              id="name"
+              placeholder="Your Name"
+              required
+            />
+            <input
+              type="number"
+              name="number"
+              id="phone"
+              placeholder="Your number"
               required
             />
           </div>
-          <input type="text" name="subject" placeholder="Subject" required />
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Your Email"
+            required
+          />
           <textarea
             name="message"
+            id="message"
             placeholder="Message"
             rows="4"
             cols="50"
             required
           ></textarea>
-          <button type="submit">Send Message</button>
+          <button type="submit" class="btnEmail">Send on Email</button>
+          <span class="OrWord"> Or </span>
+          <span class="btnWhatSapp" onclick="sendtoWhatsapp()">
+            Send on Whatsapp
+          </span>
         </form>
       </div>
     </section>
@@ -134,10 +152,10 @@
 
     <footer class="footerSection">
       <div class="bgDesignfooterSection"></div>
-      <div class="logoFooter">
+      <a href="index.html" class="logoFooter">
         <img src="images/Logo.png" alt="logo" />
         <h1>Education</h1>
-      </div>
+      </a>
       <!--  -->
       <div class="linksAddressFooter">
         <div class="GetinTouchFooter">

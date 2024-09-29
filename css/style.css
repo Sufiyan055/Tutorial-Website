@@ -520,6 +520,7 @@ a {
   flex-wrap: wrap;
   gap: 15px;
   margin-bottom: 15px;
+  color: #fff;
 }
 .footerSection .logoFooter img {
   width: 5em;

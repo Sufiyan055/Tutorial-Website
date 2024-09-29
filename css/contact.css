@@ -142,7 +142,6 @@
 .mainContactSection .contact-form form .form-group {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 15px;
 }
 .mainContactSection .contact-form form .form-group input {
   width: 48%;
@@ -160,7 +159,8 @@
   border-radius: 5px;
   font-size: 16px;
 }
-.mainContactSection .contact-form form button {
+.mainContactSection .contact-form form .btnEmail,
+.mainContactSection .contact-form form .btnWhatSapp {
   padding: 10px 20px;
   background-color: #007bff;
   color: #fff;
@@ -170,8 +170,15 @@
   font-size: 16px;
   transition: background-color 0.3s ease;
 }
-.mainContactSection .contact-form form button:hover {
+.mainContactSection .contact-form form .btnEmail.btnEmail:hover,
+.mainContactSection .contact-form form .btnWhatSapp.btnEmail:hover {
   background-color: #0056b3;
+}
+.mainContactSection .contact-form form .btnWhatSapp {
+  background-color: #30d14e;
+}
+.mainContactSection .contact-form form .btnWhatSapp:hover {
+  background-color: #218f35;
 }
 @media (max-width: 768px) {
   .mainContactSection .contact-form form .form-group {
@@ -188,6 +195,18 @@
   .mainContactSection .contact-form form button {
     width: 100%;
     font-size: 14px;
+  }
+  .mainContactSection .contact-form form .btnWhatSapp {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+  }
+  .mainContactSection .contact-form form .OrWord {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
   }
   .mainContactSection .contact-form h1 {
     font-size: 28px;

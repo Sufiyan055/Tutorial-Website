@@ -174,7 +174,6 @@
       .form-group {
         display: flex;
         justify-content: space-between;
-        margin-bottom: 15px;
 
         input {
           width: 48%;
@@ -195,7 +194,8 @@
         font-size: 16px;
       }
 
-      button {
+      .btnEmail,
+      .btnWhatSapp {
         padding: 10px 20px;
         background-color: #007bff;
         color: #fff;
@@ -205,8 +205,14 @@
         font-size: 16px;
         transition: background-color 0.3s ease;
 
-        &:hover {
+        &.btnEmail:hover {
           background-color: #0056b3;
+        }
+      }
+      .btnWhatSapp {
+        background-color: #30d14e;
+        &:hover {
+          background-color: #218f35;
         }
       }
     }
@@ -231,6 +237,14 @@
         button {
           width: 100%;
           font-size: 14px;
+        }
+        .btnWhatSapp {
+          @include flexcontent();
+          font-size: 14px;
+        }
+        .OrWord {
+          @include flexcontent();
+          padding: 5px;
         }
       }
 

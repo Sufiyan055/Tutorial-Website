@@ -26,6 +26,29 @@ toggleBar.addEventListener("click", () => {
   mainNavbar.classList.toggle("openCloseNav");
 });
 
+function sendtoWhatsapp() {
+  let name = document.getElementById("name").value;
+  let phone = document.getElementById("phone").value;
+  let email = document.getElementById("email").value;
+  let message = document.getElementById("message").value;
+
+  let url =
+    "https://wa.me/917304888579?text=" +
+    "Name: " +
+    name +
+    "%0a" +
+    "Phone: " +
+    phone +
+    "%0a" +
+    "email: " +
+    email +
+    "%0a" +
+    "message: " +
+    message;
+
+  window.open(url, "_blank").focus();
+}
+
 // Counting Animation
 document.addEventListener("DOMContentLoaded", function () {
   const counters = document.querySelectorAll(".num");
