@@ -133,7 +133,7 @@ let displayTestimnial = () => {
   testinomialContainer.innerHTML = `
     <p>${testinomials[i].testinomial}</p>
     <img src=${testinomials[i].image}>
-    <h3>${testinomials[i].name}<h3>
+    <h3>${testinomials[i].name}</h3>
     `;
 };
 

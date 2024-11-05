@@ -784,8 +784,15 @@ $TextColor: #f14d5d;
       .toggleBar {
         display: block;
         font-size: 1.3em;
-        top: 19px;
-        right: 25px;
+        top: 17px;
+        right: 22px;
+        padding: 2px 5px;
+        @include flexcontent();
+        border: 2px solid #000;
+        border-radius: 2px;
+        &:hover {
+          outline: 1px solid #2878eb;
+        }
       }
       .ulList {
         flex-flow: column;
